@@ -23,7 +23,7 @@ cargo b %BUILD_FLAGS%
 ignore_errors = true
 script = '''
 cd %TARGET_PATH%
-rename driver.dll driver.sys
+rename %CARGO_MAKE_CRATE_FS_NAME%.dll driver.sys
 '''
 
 [tasks.sign]
